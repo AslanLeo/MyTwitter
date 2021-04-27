@@ -81,7 +81,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'twitter',
-        'USER': 'askat',
+        'USER': 'atai',
         'PASSWORD': '1',
         'HOST': 'localhost',
         'PORT': 5432

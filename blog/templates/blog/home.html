@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-12 col-md-4 pr-4">
             <h3 class="white-important mb-3">
-                Profile
+                Профиль
             </h3>
             <article class="media content-section" style="height: 140px">
                 {%  if user_profile != None %}
@@ -45,10 +45,10 @@
             <article class="media content-section">
                 <div class="row full-width pl-2">
                     <div class="col-6">
-                            Followers
+                            Подписчики
                     </div>
                     <div class="col-6">
-                            Following
+                            Подписки
                     </div>
                     {%  if user_profile != None %}
                         <div class="col-6">
@@ -85,8 +85,8 @@
                 </div>
             </article>
             <form action="{% url 'user-search' %}">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="search" name="search"><br>
-                <button class="btn btn-outline-info" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="search" name="search"><br>
+                <button class="btn btn-outline-info" type="submit">Поиск</button>
             </form><br>
 
             {%  if user_profile is None %}
@@ -110,7 +110,7 @@
             <div class="d-flex">
                 {% if user_profile is None %}
                     <a class="btn btn-sm btn-outline-primary mb-4 mr-3" href="{% url 'profile' %}">
-                        SETTINGS
+                        Настройки профиля
                     </a>
                 {% endif %}
                 {%  if user_profile is not None and user_profile.id != user.id  and user.username != '' %}
@@ -135,7 +135,7 @@
             <div class="full-width row">
                 <div class="col-6">
                     <h3 class="white-important mb-3">
-                        Newsfeed
+                        Лента
                     </h3>
                 </div>
                  <div class="col-6 no-padding">

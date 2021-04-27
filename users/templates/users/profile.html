@@ -2,7 +2,7 @@
 {% load crispy_forms_tags %}
 {% block content %}
     <h3 class="white-important">
-        Change profile data
+        Редактировать профиль
     </h3>
     <form class="col-6 no-padding" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
@@ -11,7 +11,7 @@
             {{ pform | crispy }}
         </fieldset>
         <div class="form-group">
-            <button class="btn btn-outline-primary" type="submit">Change data</button>
+            <button class="btn btn-outline-primary" type="submit">Изменить</button>
         </div>
     </form>
 {% endblock content %}
