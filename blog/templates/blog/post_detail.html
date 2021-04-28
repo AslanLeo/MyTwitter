@@ -23,10 +23,10 @@
                    {% if post.author == user %}
                         <a class="material-icons ml-2"
                            style="font-size: 14px"
-                                href="{% url 'post-delete' post.id %}">clear</a>
+                                href="{% url 'post-delete' post.id %}">Очистить</a>
                         <a class="material-icons ml-2"
                            style="font-size: 14px"
-                                href="{% url 'post-update' post.id %}">update</a>
+                                href="{% url 'post-update' post.id %}">обновить</a>
                     {%  endif %}
                </div>
            </div>
